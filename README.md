@@ -1,8 +1,10 @@
 veganmap
 ========
 
-Based on coinmap [1]. Using OpenStreetMap[2] and the OverpassAPI[3].
+Generates a map with the POI's:
 
-[1]: https://github.com/prusnak/coinmap
-[2]: http://openstreetmap.org
-[3]: http://overpass-api.de
+* diet:vegan=only
+* diet:vegetarian=only
+* diet:vegan=yes 
+
+Based on [coinmap](https://github.com/prusnak/coinmap). Using [LeafletJS](http://leafletjs.com), [OpenStreetMap](https://github.com/prusnak/coinmap) and the [OverpassAPI](http://overpass-api.de).
