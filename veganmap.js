@@ -18,12 +18,18 @@ function veganmap() {
     maxZoom: 18
   });
 
-  var map = L.map('map', { center: [0, 0], zoom: 3, layers: [tileMapQuest], worldCopyJump: true });
+  var tileCloudMade = L.tileLayer('http://{s}.tile.cloudmade.com/9fc04dd0af2241b38e5aeea5d93c2655/997/256/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
+  });
+
+  var map = L.map('map', { center: [0, 0], zoom: 3, layers: [tileCloudMade], worldCopyJump: true });
 
   var layers = L.control.layers({
     "OpenStreetMap": tileOSM,
     "MapQuestOpen": tileMapQuest,
     "Toner": tileToner,
+    "CloudMade": tileCloudMade,
   }).addTo(map);
 
   var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 32});
