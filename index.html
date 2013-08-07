@@ -23,6 +23,16 @@
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" type="image/png" href="vegan24.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	    (function() {
+	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	        s.type = 'text/javascript';
+	        s.async = true;
+	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+	        t.parentNode.insertBefore(s, t);
+	    })();
+	/* ]]> */</script>
 </head>
 <body onload="veganmap()">
 	<div id="map"></div>
@@ -30,7 +40,7 @@
 		<img src="vegan100.png" align="left">Use OpenStreetMap and the tag <a href="http://wiki.openstreetmap.org/wiki/Key:diet">diet:vegan</a> to add new vegan places.<br />
 		It refreshes every hour using the <a href="http://overpass-api.de">OverpassAPI</a>.<br />
 		You can fork the code on <a href="https://github.com/xsteadfastx/veganmap">GitHub</a>.<br />
-		<script id='flattrbtn'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=xsteadfastx&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('flattrbtn');</script>
+		<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://veganmap.xsteadfastx.org/#zoom=3&lat=0&lon=0&layer=MapQuestOpen"></a>
 	</div>
 </body>
 </html>
