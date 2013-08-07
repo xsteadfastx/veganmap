@@ -38,7 +38,6 @@ function veganmap() {
 
   map.addLayer(markers);
 
-/*  map.locate({setView: true, maxZoom: 6}); */
+  var hash = new L.Hash(map);
 
-  map.addControl(new L.Control.Permalink({text: 'Permalink', layers: layers, position: "none", useLocation: true}));
 }
