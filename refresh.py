@@ -226,6 +226,8 @@ with open(scriptdir + '/veganmap-data.js', 'w') as f:
       popup += 'phone: %s<br/>' % (tags['contact:phone'])
     elif 'phone' in tags:
       popup += 'phone: %s<br/>' % (tags['phone'])
+    if 'opening_hours' in tags:
+      popup += 'opening hours: %s<br/>' % (tags['opening_hours'])
     f.write('  L.marker([%s, %s], {"title": "%s", icon: icon_%s}).bindPopup("%s").addTo(markers);\n' % (lat, lon, name.encode('utf-8'), icon, popup.encode('utf-8')))
 #  f.write('  document.getElementById("count").innerHTML = "<b>%d</b>";\n' % cnt);
   f.write('}\n')
